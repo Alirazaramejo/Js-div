@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Textarea Example</title>
+</head>
+<body>
+    <form id="textForm">
+        <textarea id="Input" rows="4" cols="50"></textarea>
+        <br>
+        <button type="button" onclick="divText()">Submit</button>
+    </form>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    <div id="textShow"></div>
+
+    <script>
+        function divText() {
+          
+            var text = document.getElementById("Input").value;
+
+           
+            document.getElementById("textShow").textContent = text;
+        }
+    </script>
+</body>
+</html>
